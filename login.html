@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+    .login-container{
+        background-color:rgb(220, 134, 220);
+        width:30%;
+        padding: 4%;
+    } 
+    .form-field label{
+        font-size: 1.4rem;
+        font-weight:bold;
+    }
+    .form-field input{
+       padding: 20px;
+       width:50%;
+       margin:10px 0px;
+    }
+     @media (max-width:430px){
+        .container{
+            flex-direction: column;
+        }
+        .login-container{
+            width:100%;
+        }
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="diwali.html" class="login-container">
+    <h1>LOGIN</h1>
+    <div class="form-field">
+        <label for="">Email</label><br>
+        <input type="email" required name="mail" placeholder="enter your mail">
+    </div>
+    <div class="form-field">
+        <label for="">password</label><br>
+        <input type="password" required name="passwordd" placeholder="enter your password">
+    </div>
+    <button class="login-btn">submit</button>
+    <p>
+        Dont have an account?<a href="index.html">signup</a>
+    </p>
+    </form>
+    <img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWcxcjh1dzMxZjdpdzN2N2FkaXYyMmw0YWNoeDNwY2x1cDM2dHliNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/lWEc3DL3zAMQ8FsxvY/giphy.webp"alt="">
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+ <center><h1>HAPPY DIWALI</h1></center>
+ <p><i>Wishing everyone a Diwali filled with joy, light, and happiness!
+
+    As the diyas glow with the brightness of hope,
+    May your life be illuminated with endless possibilities.
+    
+    As the firecrackers burst in the sky,
+    May they bring sparks of laughter and love to your days.
+    
+    May the festival of lights remove the darkness from your path,
+    And shower you with success, peace, and prosperity.
+    
+    May Goddess Lakshmi bless your home with wealth and harmony,
+    And Lord Ganesha remove all obstacles from your journey.
+    
+    May your family and friends be united in joy,
+    And may this Diwali mark the beginning of brighter days.
+    
+    Let the light of Diwali inspire you to spread love and kindness,
+    And let the warmth of your heart light up the world around you.
+    
+    May your home be filled with sweet moments and cherished memories,
+    As you celebrate the triumph of light over darkness and good over evil.Wishing you health, wealth, and wisdom in abundance,
+    May your dreams take flight and your efforts bear fruit.
+    
+    As you decorate your homes with lights and rangoli,
+    May your heart be decorated with love and gratitude.
+    
+    May this Diwali bring peace to your soul,
+    And fill every corner of your life with prosperity and happiness.
+    
+    Here’s to new beginnings, fresh hopes, and endless opportunities,
+    May your days be as bright and colorful as the festival itself.
+    
+    Happy Diwali to you and your loved ones!
+    May the light of Diwali guide you to a brighter tomorrow!"**
+    </i>
+    </p>
+    <marquee>
+    <img src="https://media.tenor.com/BT2q7cwZuugAAAAj/celebration-celebrate.gif"alt="">
+    <img src="https://cdn.pixabay.com/photo/2024/10/21/16/17/diwali-9137707_640.jpg"alt="">
+    <img src="https://cdn.pixabay.com/photo/2024/10/21/16/17/ai-generated-9137708_640.jpg"alt="">
+    <img src="https://cdn.pixabay.com/photo/2024/10/21/16/17/ai-generated-9137716_640.jpg"alt="">
+    <img src="https://cdn.pixabay.com/photo/2024/10/21/16/17/ai-generated-9137709_640.jpg"alt="">
+    <img src="https://media.tenor.com/y6hP_SftVBUAAAAj/happy-dance.gif"alt="">
+    </marquee>
+</body>
+    <script>
+        function launchConfetti() {
+        const duration = 7 * 1000; // 10 seconds
+        const end = Date.now() + duration;
+        const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+        (function frame() {
+            confetti({
+                particleCount: 6, // Reduced number of particles
+                startVelocity: 80,
+                spread: 450,
+                ticks: 190,
+                origin: { x: 0.5, y: 0.5 }, // Start from top center
+                colors: colors,
+            });
+            if (Date.now() < end) {
+                requestAnimationFrame(frame);
+            }
+        }());
+    }
+    window.onload = function() {
+        launchConfetti();
+    }
+    </script>
+    
+</html>
